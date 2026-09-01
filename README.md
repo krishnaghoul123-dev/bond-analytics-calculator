@@ -2,6 +2,10 @@
 
 An interactive fixed-income analytics app that combines bond pricing, yield to maturity (YTM), Macaulay duration, modified duration, convexity, and yield-shock scenario analysis.
 
+## Live Demo
+
+[Launch the interactive Bond Analytics Calculator](https://bond-analytics-calculator-krishna.streamlit.app)
+
 ## Features
 
 - Prices plain-vanilla fixed-rate bonds from yield
@@ -52,25 +56,4 @@ For a yield change \(\Delta y\), the estimated percentage price change is:
 ΔP/P ≈ −Modified Duration × Δy + ½ × Convexity × (Δy)²
 ```
 
-## Project structure
 
-```text
-bond-analytics/
-├── app.py                    # Streamlit user interface
-├── bond_engine.py            # Finance calculations
-├── requirements.txt          # Python dependencies
-├── tests/test_bond_engine.py # Automated tests
-└── README.md
-```
-
-## Suggested résumé bullet
-
-Built an interactive Python/Streamlit fixed-income analytics tool that numerically solves bond YTM and calculates Macaulay duration, modified duration, and convexity; visualized nonlinear price–yield behavior and benchmarked duration-based estimates against actual repricing across ±200 bp rate shocks.
-
-## Next release ideas
-
-- Settlement dates, accrued interest, clean and dirty prices
-- Irregular first/last coupons and day-count conventions
-- Callable bonds and effective duration
-- CSV export and saved comparison portfolios
-- Live market-data integration
